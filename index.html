@@ -34,6 +34,7 @@
 		<section>
 			<div class="container">
 				<h3>What Customers Say</h3>
+				<div id="instafeed"></div>
 			</div>
 		</section>
 		<section>
@@ -46,5 +47,16 @@
 				&copy; Nostrum 2018
 			</div>
 		</footer>
+		<script type="text/javascript" src="js/instafeed.min.js"></script>
+		<script>
+			var feed = new Instafeed({
+		        get: 'user',
+		        userId: '9286851909',
+		        accessToken: '9286851909.a700f8e.ee9068c7fa1441cb9430ef7b7d9cd2c2',
+		        resolution: 'standard_resolution',
+		        template: '<figure><a href="{{link}}" target="_blank"><img src="{{image}}" /></a><figcaption>{{caption}}</figcaption></figure>'
+		    });
+		    feed.run();
+		</script>
 	</body>
 </html>
