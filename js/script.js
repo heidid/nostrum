@@ -4,6 +4,7 @@ var feed = new Instafeed({
     // userId: '3654533039',
     accessToken: '9286851909.a700f8e.ee9068c7fa1441cb9430ef7b7d9cd2c2',
     resolution: 'standard_resolution',
+    limit: 6,
     template: '<figure><a href="{{link}}" target="_blank"><img src="{{image}}" /></a><figcaption>{{caption}}</figcaption></figure>'
 });
 feed.run();
