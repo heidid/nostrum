@@ -76,6 +76,19 @@ header {
     -o-background-size: cover;
     z-index: -2;
 }
+.photobg-text {
+	width: 68%;
+	height: 700px;
+	padding: 300px 0 300px 0;
+	color: #444;
+	line-height: 40px;
+}
+section .cornerphoto {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
 .videobg {
 	position: absolute;
 	top: 0;
@@ -83,13 +96,6 @@ header {
 	width: 100%;
 	object-fit: none;
 	z-index: -1;
-}
-.photobg-text {
-	width: 68%;
-	height: 700px;
-	padding: 300px 0 300px 0;
-	color: #444;
-	line-height: 40px;
 }
 .shadow {
 	box-shadow: 15px 15px 0px white, 25px 25px 0px #ff699e;
@@ -130,8 +136,8 @@ section:first-of-type {
 	margin-right: 5%;
 }
 .one-half > img {
-	width: 80%;
-	margin: auto;
+	width: 70%;
+	margin: 0 15%;
 }
 .center {
 	width: 100%;
@@ -140,10 +146,10 @@ section:first-of-type {
 }
 p {
 	font-size: 18px;
-	line-height: 1.6;
+	line-height: 1.8;
 }
 #map {
-	width: 100%;
+	width: 80%;
 	height: 300px;
 }
 #instafeed {
