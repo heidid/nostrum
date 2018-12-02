@@ -1,0 +1,58 @@
+body {
+	font-family: EurostileBold, sans-serif;
+	text-transform: uppercase;
+	background-image: url("../img/sprinkles.jpg");
+	background-repeat: no-repeat;
+}
+
+@font-face {
+	font-family: EurostileBold;
+	src: url("EUROSTIB.ttf");
+}
+
+.header {
+	text-align: center;
+	margin-top: 6%;
+	left: 50%;
+	opacity: 1;
+	font-size: 70px;
+}
+
+
+.content {
+	margin: 0 auto;
+	width: 800px;
+	font-size: 30px;
+	width: 45%px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+}
+
+#button {
+	width: 200px;
+	background: white;
+	height: 60px;
+	border: 3px solid black;
+	font-size: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#button:hover {
+	background: #FF91FF;
+	cursor: pointer;
+}
+
+/*link styles*/
+
+#button-link:link {
+    text-decoration: none;
+    color: black;
+}
+
+#button-link:visited {
+	color: black;
+}
