@@ -1,3 +1,7 @@
+/*
+pink color: #ff699e
+*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,7 +26,7 @@ h2 {
 h3 {
 	font-size: 30px;
 	letter-spacing: 4px;
-	border-bottom: 20px solid #FF91FF;
+	border-bottom: 20px solid #ff699e;
 	line-height: 0;
 	display: inline-block;
 	text-align: center;
@@ -42,17 +46,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 header {
-	/*position: fixed;*/
-	position: absolute;
+	position: fixed;
+	/*position: absolute;*/
 	top: 0;	
 	left: 0;
 	width: 100%;
 	padding: 30px 0;
 	border-top: 4px solid pink;
-	z-index: 1;
+	z-index: -1;
 }
 .logo {
-	width: 250px;
+	width: 300px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -70,7 +74,7 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    z-index: -1;
+    z-index: -2;
 }
 .videobg {
 	position: absolute;
@@ -86,6 +90,9 @@ header {
 	padding: 300px 0 300px 0;
 	color: #444;
 	line-height: 40px;
+}
+.shadow {
+	box-shadow: 15px 15px 0px white, 25px 25px 0px #ff699e;
 }
 section {
 	position: relative;
@@ -107,10 +114,33 @@ section:first-of-type {
 	max-width: 1170px;
 	margin: auto;
 }
+.col {
+	display: inline-block;
+	float: left;
+}
+.col:last-child {
+	margin-right: 0;
+}
+.one-third {
+	width: 32%;
+	margin-right: 2%;
+}
+.one-half {
+	width: 45%;
+	margin-right: 5%;
+}
+.one-half > img {
+	width: 80%;
+	margin: auto;
+}
 .center {
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
+}
+p {
+	font-size: 18px;
+	line-height: 1.6;
 }
 #map {
 	width: 100%;
@@ -162,14 +192,14 @@ section:first-of-type {
 	text-decoration: none;
 }
 .button:hover {
-	box-shadow: 0 -38px 0px #FF91FF inset;
+	box-shadow: 0 -38px 0px #ff699e inset;
 }
 a:link, a:active, a:visited {
-	color: #FF91FF;
+	color: #ff699e;
 }
 a:hover {
 	color: #000;
-	box-shadow: 0 -8px 0px #FF91FF inset;
+	box-shadow: 0 -8px 0px #ff699e inset;
 }
 footer {
 	width: 100%;
