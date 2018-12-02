@@ -118,6 +118,7 @@ section:first-of-type {
 .container {
 	max-width: 1170px;
 	margin: auto;
+	position: relative;
 }
 .col {
 	display: inline-block;
