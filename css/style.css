@@ -21,21 +21,38 @@ h2 {
 }
 h3 {
 	font-size: 30px;
-	letter-spacing: 4px;	
+	letter-spacing: 4px;
 	border-bottom: 20px solid #FF91FF;
 	line-height: 0;
 	display: inline-block;
+	text-align: center;
 	margin: 10px 0 50px 0;
+}
+h3 a:link, h3 a:active, h3 a:visited {
+	color: black;
+}
+h4 {
+	font-size: 20px;
+	letter-spacing: 4px;
+	color: #444;
+	text-align: center;
+	margin: 35px 0;
 }
 body {
 	font-family: 'Montserrat', sans-serif;
 }
 header {
-	padding: 50px 0;
+	/*position: fixed;*/
+	position: absolute;
+	top: 0;	
+	left: 0;
+	width: 100%;
+	padding: 30px 0;
 	border-top: 4px solid pink;
+	z-index: 1;
 }
 .logo {
-	width: 400px;
+	width: 250px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -44,35 +61,70 @@ header {
 	height: auto;
 }
 .photobg {
-	padding: 200px 0;
-	background: url("../img/stockphoto.jpg");
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    z-index: -1;
+}
+.videobg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	object-fit: none;
+	z-index: -1;
 }
 .photobg-text {
 	width: 68%;
+	height: 700px;
+	padding: 300px 0 300px 0;
 	color: #444;
 	line-height: 40px;
-	background: #fff;
-	padding: 10px 15px;
 }
 section {
-	padding: 50px 0;
+	position: relative;
+	padding: 80px 0;
+	background: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+section.extra-padding {
+	padding: 150px 0;
+}
+section.transparent {
+	background: transparent;
+}
+section:first-of-type {
+	margin-top: 700px;
 }
 .container {
 	max-width: 1170px;
 	margin: auto;
 }
+.center {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+#map {
+	width: 100%;
+	height: 300px;
+}
 #instafeed {
-	-webkit-column-count: 4;
+	width: 800px;
+	margin: auto;
+	-webkit-column-count: 3;
 	-webkit-column-gap: 20px;
 	-webkit-column-fill: auto;
-	-moz-column-count: 4;
+	-moz-column-count: 3;
 	-moz-column-gap: 20px;
-	column-count: 4;
+	column-count: 3;
 	column-gap: 20px;
 	column-fill: auto;
 }
@@ -80,8 +132,13 @@ section {
 	-webkit-column-break-inside: avoid;
 	-moz-column-break-inside: avoid;
 	column-break-inside: avoid;
-	/*border: 2px solid #666;*/
-	padding: 5px;
+	margin-bottom: 30px;
+	border: 1px solid #ddd;
+	padding: 3px;
+	/*display: inline-block;
+	float: left;
+	width: 300px;
+	padding: 25px;*/
 }
 #instafeed figure img {
 	width: 100%;
@@ -90,12 +147,29 @@ section {
 	display: block;
 	width: 100%;
 	background: #f5f5f5;
-	padding: 16px;
-	font-size: 14px;
+	padding: 12px;
+	font-size: 12px;
 	line-height: 1.6;
 }
 .button {
-
+	display: inline-block;
+	border: 4px solid black;
+	padding: 25px 45px;
+	font: 22px EurostileBold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+}
+.button:hover {
+	box-shadow: 0 -38px 0px #FF91FF inset;
+}
+a:link, a:active, a:visited {
+	color: #FF91FF;
+}
+a:hover {
+	color: #000;
+	box-shadow: 0 -8px 0px #FF91FF inset;
 }
 footer {
 	width: 100%;
