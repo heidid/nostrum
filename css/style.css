@@ -24,13 +24,14 @@ h2 {
 	letter-spacing: 5px;
 }
 h3 {
+    display: inline;
 	font-size: 30px;
 	letter-spacing: 4px;
-	border-bottom: 20px solid #ff699e;
-	line-height: 0;
-	display: inline-block;
-	text-align: center;
-	margin: 10px 0 40px 0;
+	line-height: 1.7;
+    background: linear-gradient(to bottom, #fff 50%, #fff 50%, #ff699e 50%, #ff699e 100%);
+}
+h3 + * {
+	margin-top: 40px !important; /* can't apply margin-bottom to h3 because it's inline */
 }
 h3 a:link, h3 a:active, h3 a:visited {
 	color: black;
